@@ -22,10 +22,9 @@ void Automate::empilerSymbole(Symbole * s){
     this->pileSymbole.push(s);
 }
 
-Etat* Automate::depilerEtat(){
-    Etat * e = this->pileEtat.top();
+void Automate::depilerEtat(){
+    delete this->pileEtat.top();
     this->pileEtat.pop();
-    return e;
 }
 
 Symbole* Automate::depilerSymbole(){

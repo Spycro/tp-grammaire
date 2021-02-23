@@ -15,6 +15,8 @@ void Etat9::Transition(Automate * a, Symbole * s){
             Symbole * s3 = a->depilerSymbole();
 
             a->empilerSymbole(s2);
+            delete s1;
+            delete s3;
             switch (a->getPileEtat().top()->getNum())
                 {
                 case 0:
@@ -49,6 +51,8 @@ void Etat9::Transition(Automate * a, Symbole * s){
             Symbole * s3 = a->depilerSymbole();
 
             a->empilerSymbole(s2);
+            delete s1;
+            delete s3;
             switch (a->getPileEtat().top()->getNum())
                 {
                 case 0:
@@ -78,12 +82,14 @@ void Etat9::Transition(Automate * a, Symbole * s){
             a->depilerEtat();
             a->depilerEtat();
             a->depilerEtat();
-            
+
             Symbole * s1 = a->depilerSymbole();
             Symbole * s2 = a->depilerSymbole();
             Symbole * s3 = a->depilerSymbole();
 
             a->empilerSymbole(s2);
+            delete s1;
+            delete s3;
             switch (a->getPileEtat().top()->getNum())
                 {
                 case 0:
@@ -119,6 +125,8 @@ void Etat9::Transition(Automate * a, Symbole * s){
             Symbole * s3 = a->depilerSymbole();
 
             a->empilerSymbole(s2);
+            delete s1;
+            delete s3;
             switch (a->getPileEtat().top()->getNum())
                 {
                 case 0:

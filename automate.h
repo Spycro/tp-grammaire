@@ -29,7 +29,7 @@ class Automate {
         void EtatSuivant(Automate * a, Symbole * s);
         void empilerEtat(Etat * e);
         void empilerSymbole(Symbole * s);
-        Etat* depilerEtat();
+        void depilerEtat();
         Symbole* depilerSymbole();
         bool getLecture(){ return lecture; }
         void setLecture(bool b){ this->lecture=b ; }

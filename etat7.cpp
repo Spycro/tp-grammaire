@@ -15,6 +15,9 @@ void Etat7::Transition(Automate * a, Symbole * s){
             Symbole * s3 = a->depilerSymbole();
 
             int somme = s1->getInt()+s3->getInt();
+            delete s1;
+            delete s2;
+            delete s3;
             Symbole * aEmpiler = new Entier(somme);
             a->empilerSymbole(aEmpiler);
 
@@ -58,6 +61,9 @@ void Etat7::Transition(Automate * a, Symbole * s){
             Symbole * s3 = a->depilerSymbole();
 
             int somme = s1->getInt()+s3->getInt();
+            delete s1;
+            delete s2;
+            delete s3;
             Symbole * aEmpiler = new Entier(somme);
             a->empilerSymbole(aEmpiler);
             switch (a->getPileEtat().top()->getNum())
@@ -96,6 +102,9 @@ void Etat7::Transition(Automate * a, Symbole * s){
 
             int somme = s1->getInt()+s3->getInt();
             Symbole * aEmpiler = new Entier(somme);
+            delete s1;
+            delete s2;
+            delete s3;
             a->empilerSymbole(aEmpiler);
             switch (a->getPileEtat().top()->getNum())
                 {
