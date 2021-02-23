@@ -6,6 +6,7 @@ using namespace std;
 Automate::Automate(){
     Etat * e = new Etat0();
     pileEtat.push(e);
+    fin=false;
 }
 
 

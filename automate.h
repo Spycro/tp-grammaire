@@ -33,6 +33,8 @@ class Automate {
         Symbole* depilerSymbole();
         bool getLecture(){ return lecture; }
         void setLecture(bool b){ this->lecture=b ; }
+        bool getFin(){ return this->fin; }
+        void setFin(bool f){ this->fin=f; }
         stack<Etat*> getPileEtat() {return pileEtat;}
         stack<Symbole*> getPileSymbole() {return pileSymbole;}
 
@@ -40,5 +42,6 @@ class Automate {
         stack<Etat*> pileEtat;
         stack<Symbole*> pileSymbole;
         bool lecture;
+        bool fin;
 
 };

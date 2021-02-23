@@ -15,6 +15,7 @@ void Etat1::Transition(Automate * a, Symbole * s){
             break;
         case FIN:
             cout<<"ACCEPTER"<<endl;
+            a->setFin(true);
             break;
     }
 }

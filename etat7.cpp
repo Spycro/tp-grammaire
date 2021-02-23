@@ -10,6 +10,14 @@ void Etat7::Transition(Automate * a, Symbole * s){
             a->depilerEtat();
             a->depilerEtat();
             a->depilerEtat();
+            Symbole * s1 = a->depilerSymbole();
+            Symbole * s2 = a->depilerSymbole();
+            Symbole * s3 = a->depilerSymbole();
+
+            int somme = s1->getInt()+s3->getInt();
+            Symbole * aEmpiler = new Entier(somme);
+            a->empilerSymbole(aEmpiler);
+
             switch (a->getPileEtat().top()->getNum())
                 {
                 case 0:
@@ -45,6 +53,13 @@ void Etat7::Transition(Automate * a, Symbole * s){
             a->depilerEtat();
             a->depilerEtat();
             a->depilerEtat();
+            Symbole * s1 = a->depilerSymbole();
+            Symbole * s2 = a->depilerSymbole();
+            Symbole * s3 = a->depilerSymbole();
+
+            int somme = s1->getInt()+s3->getInt();
+            Symbole * aEmpiler = new Entier(somme);
+            a->empilerSymbole(aEmpiler);
             switch (a->getPileEtat().top()->getNum())
                 {
                 case 0:
@@ -75,6 +90,13 @@ void Etat7::Transition(Automate * a, Symbole * s){
             a->depilerEtat();
             a->depilerEtat();
             a->depilerEtat();
+            Symbole * s1 = a->depilerSymbole();
+            Symbole * s2 = a->depilerSymbole();
+            Symbole * s3 = a->depilerSymbole();
+
+            int somme = s1->getInt()+s3->getInt();
+            Symbole * aEmpiler = new Entier(somme);
+            a->empilerSymbole(aEmpiler);
             switch (a->getPileEtat().top()->getNum())
                 {
                 case 0:
