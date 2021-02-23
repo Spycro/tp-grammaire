@@ -29,8 +29,8 @@ class Automate {
         void EtatSuivant(Automate * a, Symbole * s);
         void empilerEtat(Etat * e);
         void empilerSymbole(Symbole * s);
-        void depilerEtat();
-        void depilerSymbole();
+        Etat* depilerEtat();
+        Symbole* depilerSymbole();
         bool getLecture(){ return lecture; }
         void setLecture(bool b){ this->lecture=b ; }
         stack<Etat*> getPileEtat() {return pileEtat;}
