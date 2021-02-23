@@ -31,12 +31,14 @@ class Automate {
         void empilerSymbole(Symbole * s);
         void depilerEtat();
         void depilerSymbole();
-
+        bool getLecture(){ return lecture; }
+        void setLecture(bool b){ this->lecture=b ; }
         stack<Etat*> getPileEtat() {return pileEtat;}
         stack<Symbole*> getPileSymbole() {return pileSymbole;}
 
     protected:
         stack<Etat*> pileEtat;
         stack<Symbole*> pileSymbole;
+        bool lecture;
 
 };

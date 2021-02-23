@@ -1,6 +1,7 @@
 #include "etat8.h"
 
 void Etat8::Transition(Automate * a, Symbole * s){
+    a->setLecture(false);
     cout<<"Execution Etat 8 "<<endl;
     switch(int(*s)){
         case PLUS:
@@ -12,15 +13,19 @@ void Etat8::Transition(Automate * a, Symbole * s){
             switch (a->getPileEtat().top()->getNum())
                 {
                 case 0:
+                    cout<<"Empilement etat 1"<<endl;
                     a->empilerEtat(new Etat1());
                     break;
                 case 2:
+                    cout<<"Empilement etat 6"<<endl;
                     a->empilerEtat(new Etat6());
                     break;
                 case 4:
+                    cout<<"Empilement etat 7"<<endl;
                     a->empilerEtat(new Etat7());
                     break;
                 case 5:
+                    cout<<"Empilement etat 8"<<endl;
                     a->empilerEtat(new Etat8());
                     break;
                 
@@ -37,15 +42,19 @@ void Etat8::Transition(Automate * a, Symbole * s){
             switch (a->getPileEtat().top()->getNum())
                 {
                 case 0:
+                    cout<<"Empilement etat 1"<<endl;
                     a->empilerEtat(new Etat1());
                     break;
                 case 2:
+                    cout<<"Empilement etat 6"<<endl;
                     a->empilerEtat(new Etat6());
                     break;
                 case 4:
+                    cout<<"Empilement etat 7"<<endl;
                     a->empilerEtat(new Etat7());
                     break;
                 case 5:
+                    cout<<"Empilement etat 8"<<endl;
                     a->empilerEtat(new Etat8());
                     break;
                 
@@ -62,15 +71,19 @@ void Etat8::Transition(Automate * a, Symbole * s){
             switch (a->getPileEtat().top()->getNum())
                 {
                 case 0:
+                    cout<<"Empilement etat 1"<<endl;
                     a->empilerEtat(new Etat1());
                     break;
                 case 2:
+                    cout<<"Empilement etat 6"<<endl;
                     a->empilerEtat(new Etat6());
                     break;
                 case 4:
+                    cout<<"Empilement etat 7"<<endl;
                     a->empilerEtat(new Etat7());
                     break;
                 case 5:
+                    cout<<"Empilement etat 8"<<endl;
                     a->empilerEtat(new Etat8());
                     break;
                 
@@ -87,15 +100,19 @@ void Etat8::Transition(Automate * a, Symbole * s){
             switch (a->getPileEtat().top()->getNum())
                 {
                 case 0:
+                    cout<<"Empilement etat 1"<<endl;
                     a->empilerEtat(new Etat1());
                     break;
                 case 2:
+                    cout<<"Empilement etat 6"<<endl;
                     a->empilerEtat(new Etat6());
                     break;
                 case 4:
+                    cout<<"Empilement etat 7"<<endl;
                     a->empilerEtat(new Etat7());
                     break;
                 case 5:
+                    cout<<"Empilement etat 8"<<endl;
                     a->empilerEtat(new Etat8());
                     break;
                 

@@ -12,9 +12,11 @@ int main(void) {
    while(*(s=l.Consulter())!=FIN) {
       s->Affiche();
       cout<<endl;
-      
+
+      automata->setLecture(true);
       automata->EtatSuivant(automata, s);
-      l.Avancer();
+      if(automata->getLecture())
+         l.Avancer();
    }
    return 0;
 }
