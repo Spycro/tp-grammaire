@@ -17,5 +17,9 @@ void Etat1::Transition(Automate * a, Symbole * s){
             cout<<"ACCEPTER"<<endl;
             a->setFin(true);
             break;
+        default:
+                    cout<<"Il y a une erreur de grammaire dans la chaine"<<endl;
+                    a->setFin(true);
+                    break;
     }
 }

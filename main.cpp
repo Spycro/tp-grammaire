@@ -4,7 +4,7 @@
 #include "etat.h"
 
 int main(void) {
-   string chaine("(1+55*2)+(7*4+2+3*(4+5))+5*5*5*5+4*5+4*5+(6*7*8+3)");
+   string chaine("(1+55*2)+(7*4+2+3*(4+5))+5*5*5*5+4*5+4*5+(6*7*8+3))");
 
    Lexer l(chaine);
    Automate * automata = new Automate();

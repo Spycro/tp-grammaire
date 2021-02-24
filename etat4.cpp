@@ -13,5 +13,9 @@ void Etat4::Transition(Automate * a, Symbole * s){
             a->empilerEtat(new Etat2());
             a->empilerSymbole(s);
             break;
+        default:
+            cout<<"Il y a une erreur de grammaire dans la chaine"<<endl;
+            a->setFin(true);
+            break;
     }
 }

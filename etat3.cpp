@@ -109,5 +109,9 @@ void Etat3::Transition(Automate * a, Symbole * s){
             }
             break;
         }
+        default:
+            cout<<"Il y a une erreur de grammaire dans la chaine"<<endl;
+            a->setFin(true);
+            break;
     }
 }
